@@ -3,180 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behind the Scenes - Gaming</title>
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px;
-            background: linear-gradient(90deg, #6366f1, #d946ef);
-        }
-
-        .timeline {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            width: 220px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            background: #334155;
-        }
-
-        .card-img {
-            width: 100%;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        #details {
-            text-align: center;
-            padding: 30px;
-            min-height: 200px;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        .show {
-            opacity: 1 !important;
-        }
-
-        .detail-img {
-            height: 350px; 
-            width: auto;
-            border-radius: 12px;
-            margin: 20px auto;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-            display: block;
-            max-width: 90%; 
-        }
-
-        ul {
-            text-align: left;
-            display: inline-block;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            margin-top: 40px;
-        }
-    </style>
+    <title>Riječka Hartera - Počeci Industrijske Revolucije</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>🎮 Behind the Scenes</h1>
-        <p>Moj put: setup • streamanje • turniri</p>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Riječka <span>Hartera</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#pocetak">1821. Godina</a></li>
+                    <li><a href="#manufaktura">Prva Manufaktura</a></li>
+                    <li><a href="#proizvodnja">Proizvodnja od krpa</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="timeline">
-        <div class="card" onclick="showDetails('setup')">
-            <img src="setup.jpg" alt="Slika setupa" class="card-img">
-            <h2>PC Setup</h2>
-            <p>Klikni za proces</p>
-        </div>
-
-        <div class="card" onclick="showDetails('stream')">
-            <img src="stream.jpg" alt="Slika streama" class="card-img">
-            <h2>Streamanje</h2>
-            <p>Klikni za proces</p>
-        </div>
-
-        <div class="card" onclick="showDetails('esports')">
-            <img src="gejmer.jpg" alt="Slika gejmera" class="card-img">
-            <h2>Turniri</h2>
-            <p>Klikni za proces</p>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2>Kanjon Rječine i Rađanje Riječke Industrije</h2>
+            <p>Upoznajte povijesnu prekretnicu iz 1821. godine koja je pokrenula industrijsku revoluciju u Rijeci.</p>
+            <a href="#pocetak" class="btn">Istraži povijest</a>
         </div>
     </section>
 
-    <section id="details">
-        <h2>Klikni karticu 👆</h2>
-    </section>
+    <main class="container">
+        <section id="pocetak" class="content-section">
+            <div class="section-title">
+                <h2>Prekretnica u Kanjonu Rječine: 1821.</h2>
+            </div>
+            <div class="grid-2">
+                <div class="text-block">
+                    <p>Godina <strong>1821.</strong> predstavlja službeni početak priče o riječkoj tvornici papira – popularnoj <strong>Harteri</strong>. Vizionar i poduzetnik <strong>Andrija Ljudevit Adamić</strong> prepoznao je golem potencijal skrivene i snažne snage vode u kanjonu Rječine.</p>
+                    <p>Kupnjom starog mlina na Lučicama, Adamić postavlja temelje koji će Rijeku transformirati iz trgovačkog gradića u moćno industrijsko središte Habsburške Monarhije. Ovaj vizionarski korak označio je prve korake industrijske revolucije na našim prostorima.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Ključni Trenuci</h3>
+                    <ul>
+                        <li><strong>Lokacija:</strong> Kanjon Rječine, mlin Lučice</li>
+                        <li><strong>Osnivač:</strong> Andrija Ljudevit Adamić</li>
+                        <li><strong>Značaj:</strong> Prva strojarna i manufaktura papira</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>© 2026 Moj Gaming Journey</p>
+        <section id="manufaktura" class="content-section bg-light">
+            <div class="section-title">
+                <h2>Prva Manufaktura Papira</h2>
+            </div>
+            <p>Nakon što je Adamić kupio mlin, započeo je mukotrpan proces pretvaranja tradicionalnog pogona u prvu modernu manufakturu papira. Uskoro udružuje snage s engleskim trgovcem <strong>Williamom Molineom</strong> i tehničkim genijem <strong>Charlesom Meynierom</strong>, što je omogućilo uvoz najsuvremenijih strojeva tog doba.</p>
+            <p>Hartera nije bila samo tvornica; ona je bila simbol tehnološkog napretka, zapošljavala je stotine radnika i proizvodila papir vrhunske kvalitete koji se izvozio diljem svijeta.</p>
+        </section>
+
+        <section id="proizvodnja" class="content-section">
+            <div class="section-title">
+                <h2>Mukotrpna Proizvodnja: Od starih krpa do papira</h2>
+            </div>
+            <p>Prije nego što je drvo postalo primarna sirovina, papir se u 19. stoljeću proizvodio na izrazito težak i fizički zahtjevan način – <strong>recikliranjem starih tekstilnih krpa</strong>. Proces je zahtijevao preciznost, strpljenje i ogroman ljudski napor:</p>
+            
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h4>Sakupljanje i razvrstavanje</h4>
+                    <p>Stare pamučne i lanene krpe sakupljale su se i ručno čistile od gumba, šavova i nečistoća.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h4>Truljenje i pranje</h4>
+                    <p>Krpe su se namakale u vodi tjednima kako bi vlakna omekšala i započeo kontrolirani proces fermentacije.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h4>Mljevenje pod mlinom</h4>
+                    <p>Veliki drveni čekići, pokretani snagom Rječine, bjesomučno su udarali i mrvili krpe u kašu (pulpu).</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <h4>Oblikovanje i sušenje</h4>
+                    <p>Radnici su ručno zahvaćali pulpu situom, cijedili je, prešali i vješali listove na sušenje.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+<iframe style="max-width:100%" src="https://wordwall.net/embed/a3f2ab5b4d10453cb497f599b8a50c7f?themeId=65&templateId=25&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+<iframe style="max-width:100%" src="https://wordwall.net/embed/69ade291ffa442169c0796c7c33e25cf?themeId=1&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Riječka Hartera i prva industrija. Edukativni povijesni pregled.</p>
+        </div>
     </footer>
-
-    <script>
-    function showDetails(type) {
-        let content = "";
-
-        if (type === "setup") {
-            content = `
-            <h2>🖥️ PC Setup - Behind the Scenes</h2>
-            <img src="setup.jpg" alt="PC Setup" class="detail-img">
-            <ul>
-                <li>Provjera opreme i RGB osvjetljenja</li>
-                <li>Ažuriranje drivera i igara</li>
-                <li>Postavljanje Discorda za komunikaciju</li>
-                <li>Priprema pića (energetsko piće ili voda)</li>
-                <li>Zagrijavanje (Aim Lab ili casual mečevi)</li>
-            </ul>
-            `;
-        }
-
-        if (type === "stream") {
-            content = `
-            <h2>🎥 Streamanje - Behind the Scenes</h2>
-            <img src="stream.jpg" alt="Streamanje" class="detail-img">
-            <ul>
-                <li>Podešavanje kamere, mikrofona i OBS-a</li>
-                <li>Najava streama na društvenim mrežama</li>
-                <li>Čitanje chata i interakcija s gledateljima</li>
-                <li>Kreiranje i spremanje najboljih klipova</li>
-                <li>Završavanje streama i "raidanje" drugog streamera</li>
-            </ul>
-            `;
-        }
-
-        if (type === "esports") {
-            content = `
-            <h2>🏆 Turniri - Behind the Scenes</h2>
-            <img src="gejmer.jpg" alt="Turniri" class="detail-img">
-            <ul>
-                <li>Analiza VOD-ova (pregledavanje vlastitih grešaka)</li>
-                <li>Vježbanje strategija s timom (scrimovi)</li>
-                <li>Mentalna priprema prije važnog meča</li>
-                <li>Fokusirana komunikacija u igri (callouts)</li>
-                <li>Analiza nakon meča i dogovor za dalje</li>
-            </ul>
-            `;
-        }
-
-        let details = document.getElementById("details");
-        details.classList.remove("show");
-        
-        setTimeout(() => {
-            details.innerHTML = content;
-            details.classList.add("show");
-        }, 200);
-    }
-    </script>
-
 </body>
 </html>
